@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Confirm Booking</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+
+    <span class="date">
+          <ion-icon ios="ios-calendar" md="md-calendar"></ion-icon>&nbsp;{{bookdate| date: 'dd/MM/yyyy'}}
+      </span>
+    <br><br> <h2 class="storeName"><b>{{storeName}}</b><br>
+      List of treatment:</h2>
+    <hr>
+    <ion-grid style="white-space: normal;" text-wrap>
+      <div *ngFor="let book of bookings">
+        <ion-row>
+          <ion-col>
+            {{book.treatmentName}}
+          </ion-col>
+          <ion-col>
+            <a class="b">
+              <ion-icon ios="ios-time" md="md-time"></ion-icon>&nbsp;&nbsp;{{book.treatmentDuration}}min
+            </a>
+          </ion-col>
+          <ion-col>
+            Rp.{{book.treatmentPrice}}
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <ion-row>
+        <ion-col>
+          Total
+        </ion-col>
+        <ion-col>
+         Rp.{{totalPrice}}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <button ion-button round (click)="goBooking()" color="primary" type="submit"  full >Book Appointment</button>
+    <br>
+    <span style="font-size:xx-small;text-align:justify;white-space:normal;">
+          *note
+          <ol>
+            <li>You will pay for services to the Merchant directly. </li>
+            <li> Exclusive for Make Up Artist, Hair Stylist, and Henna Artist, you are required to make a Down Payment (DP) directly to your beautician based on each beautician payment policy. You will receive your beautician contact information once your booking is accepted, please contact your beautician.</li>
+            <li>This price is exclude transportation cost if our beautician need to come to your place. Our average price estimation for transportation is IDR 8000/KM.</li>
+          </ol>
+          </span>
+  </ion-item>
+
+</ion-content>

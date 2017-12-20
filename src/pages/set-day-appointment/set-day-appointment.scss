@@ -1,0 +1,25 @@
+page-set-day-appointment {
+    .button-md.previous{
+        display: inline-block;
+        padding-right: 1%;
+        padding-left: 4%;
+        height: 3.2rem; 
+        font-size: 1.8em;
+        margin-left: 11%;
+    }
+    .button-md.after{
+        display: inline-block;
+        padding-right: 4%;
+        padding-left: 0%;
+        height: 3.2rem; 
+        font-size: 1.8em;
+        margin-left: 49%;
+    }
+    .select{
+        padding-left: 20%;
+    }
+    .button-md.proceed{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}

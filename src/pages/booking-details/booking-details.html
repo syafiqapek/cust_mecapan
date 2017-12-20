@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Booking Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item padding class="items" style="white-space: normal;" text-wrap>
+        <div style="padding-left:10%;">
+          <h2 class="bottomLine"><b>Booking Details</b></h2>
+          <hr style="border-bottom: 1px solid #e91e63; width:80%;" align="left">
+          <h3><b>Store Name  : </b>{{storename}}</h3>
+          <h3><b>Appointment Date   : </b>{{appointmentdate| date: 'dd/MM/yyyy'}}</h3>
+          <h3><b>Treatment Name  :</b>{{treatment}} </h3>
+        </div>
+        <br>
+        <div *ngIf="showButtonCancel">
+        <button ion-button round color="warning" class="pull-right" *ngIf="statusId==2" (click)="cancelBooking()">Cancel Appointment</button>
+        </div>
+    </ion-item>
+    <form [formGroup]="userReason" (ngSubmit)=submitCancelBooking(userReason.value)>
+      <div *ngIf="counter == '1'">
+    <ion-item >
+        <ion-label floating>Select Reasons:</ion-label>
+              <ion-select [(ngModel)]="re" formControlName="reasonID" interface="popover">
+                <ion-option [value]="reason.MasterDataMaintenanceItemID" *ngFor="let reason of reasons">{{reason.ParameterName}} </ion-option>
+              </ion-select>
+    </ion-item>
+    <ion-item *ngIf="re==415">
+        <ion-textarea formControlName="description" placeholder="Enter a description"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <button text-center ion-button round color="info" type="submit" class="update" full>Cancel Booking</button>
+    </ion-item>
+    </div>
+  </form>
+</ion-content>

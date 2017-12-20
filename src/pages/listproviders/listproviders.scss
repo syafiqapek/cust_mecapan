@@ -1,0 +1,76 @@
+page-listproviders {
+ion-spinner {
+    width: 188px;
+    height: 188px;
+    stroke: #444;
+    fill: #222;
+    }
+
+.defaultStore{
+    min-width: 4rem;
+    min-height: 4rem;
+    margin-left: 18%;
+    border-radius: 23%;
+}
+
+.butang{
+    font-size: 1.4em;
+}
+
+ion-buttons.filter{
+    margin-left: 10%;
+}
+
+ion-button.option{
+    margin-left: -10%;
+    align-items: left;
+}
+
+.searchbar-md .searchbar-input {
+    line-height: 1rem;
+}
+.searchbar-md .searchbar-search-icon {
+    top:6px;
+}
+h2.name{
+    margin: 10px 0px;
+    padding-left: 5%;
+}
+p.name2{
+    padding-left: 5%;
+}
+ion-button.option{
+    padding-left: 10%;
+}
+
+div.name2{
+    margin-top: 0%;
+    margin-left: 10%;
+}
+div.one{
+    margin-top: -2%;
+    margin-left: 90%;
+    font-size: 1.2rem;
+}
+div.two{
+    margin-top: -2%;
+    margin-left: 70%;
+    font-size: 1.2rem;
+}
+div.three{
+    margin-top: -2%;
+    margin-left: 60%;
+    font-size: 1.2rem;
+}
+div.four{
+    margin-top: -2%;
+    margin-left: 60%;
+    font-size: 1.2rem;
+}
+div.five{
+    margin-top: -2%;
+    margin-left: 50%;
+    font-size: 1.2rem;
+}
+
+}

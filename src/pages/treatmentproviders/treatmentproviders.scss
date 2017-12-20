@@ -1,0 +1,85 @@
+page-treatmentproviders {
+    
+        .select{
+            margin-left: -30%;
+            font-size: 90%
+        }
+        .aboutTitle{
+            color: #56C8C8;
+            font-weight: bold;
+        }
+        .aboutContent{
+            font-weight: bold;
+            font-size: 80%;
+        }
+        .choose{
+            margin-left: -5%;
+            font-size: 80%
+        }
+        .type{
+            margin-left: -75%;
+            font-size: 80%
+        }
+        .hours{
+            margin-left: 15%;
+           
+        }
+        .button{
+            margin-top: 2%;
+            margin-bottom: 3%;
+            
+        }
+        .rate{
+            padding-left: 20%;
+        }
+        .review{
+            font-size: 13px;
+            padding-left: 2%;
+            position: relative;
+            bottom: -10px;
+        }
+        .discount{
+            padding-left: 0%;
+            font-weight: bold;
+            
+        }
+        .item-md .item-button{
+            padding: 2%;
+            height: 0%;
+            font-size: 90%;
+            border-radius: 15%;
+        }
+        .button-md-rate {
+            color: #fff;
+            background-color: #56C8C8;
+        }
+        ion-icon.time{
+            display: inline-block;
+            font-size: 140%;
+            padding-left: 2%;
+            margin-top: 1%;
+        }
+        ion-icon.usd{
+            display: inline-block;
+            font-size: 100%;
+            padding-left: 3%;
+            color: black;
+            margin-top: 1%;
+        }
+        .description{
+            font-size: 69%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            // font-weight: 100%;
+            text-align: start;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+        .label.label-md {
+            margin: 4% 0% 3% 0%;
+        }
+        
+        
+    
+    }
+    
