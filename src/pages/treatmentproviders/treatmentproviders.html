@@ -108,7 +108,6 @@
         <!-- <span style="font-size:80%"><b>Hair</b></span> -->
           <ion-item *ngFor="let treatment of treatmentList;let i = index" style="white-space: normal;" text-wrap>
             <ion-label>
-              
             <b> {{treatment.treatmentName}} </b><br>
             <ion-row>
               <ion-col>
@@ -118,8 +117,6 @@
                   <a class="hours"><b>{{treatment.treatmentDuration}} min</b></a>
                 </ion-col>
             </ion-row>
-            
-            
             </ion-label>
             <ion-checkbox [(ngModel)]="checkedItems[i]" (ionChange)="choosenTreatment(treatment.treatmentID,checkedItems[i],treatment.agentDiscountID,treatment.agentBranchID)" color="primary"></ion-checkbox>
           </ion-item>
