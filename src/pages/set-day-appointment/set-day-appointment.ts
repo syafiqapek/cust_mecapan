@@ -124,7 +124,7 @@ export class SetDayAppointmentPage {
      //pastikan dlm bentuk ni kalau boleh la [{ date: "2017-11-13" }, { date: "2017-11-16" }, { date: "2017-11-18" }, { date: "2017-11-20" }, { date: "2017-11-22" }]
     for (let i = 0; i < Data.length; i++) {
        this.daysDisable.push({
-         date: new Date(this.data[i].date),
+         date: new Date(this.fullDay[i]),
          subTitle: "Full", // ni tukar la ikut citarasa
          disable: true,
          marked: true
